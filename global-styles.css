@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One|PT+Sans|Molle:400i|BioRhyme&display=swap');
+body {
+    font-family: 'PT Sans', Calibri, Verdana, sans-serif;
+    background-color: deeppink;
+    padding: 0%;
+}
+
+main {
+    padding: 1em 3em;
+    background-color: darkorchid;
+    margin: 0%;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+
+/* further down the list are backup font families */
+
+h2,
+h3,
+h4 {
+    font-family: 'Yeseva One', Cambria, 'Bookman Old Style', serif;
+}
+
+h1 {
+    font-family: BioRhyme, Cambria, 'Bookman Old Style', serif;
+    font-size: 4em;
+    margin: 0px;
+}
+
+.extra {
+    font-family: 'Molle', cursive;
+    font-size: 2em;
+    vertical-align: middle;
+}
