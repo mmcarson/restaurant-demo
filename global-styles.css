@@ -1,13 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One|PT+Sans|Molle:400i|BioRhyme&display=swap');
+:root {
+    --pink1: #ff55ed;
+    --pink2: #ff00ba;
+    --pink3: #ffcce8;
+    --purple1: #9800ff;
+    --purple2: #6600aa;
+    --purple3: #ddaaff;
+    --blue1: #55eeff;
+    --blue2: #666ccc;
+    --blue3: #0027ff;
+    --mint1: #aaffdd;
+    --mint2: #55ffbb;
+    --lime1: #99ff55;
+    --lime2: #12ff00;
+    --sage1: #44aa00;
+    --hunter1: #005533;
+    --gold1: #ffd800;
+    --yellow1: #fff433;
+    --yellow2: #fff999;
+    --orange1: #ff8f33;
+}
+
 body {
     font-family: 'PT Sans', Calibri, Verdana, sans-serif;
-    background-color: deeppink;
+    background-color: var(--yellow1);
     padding: 0%;
 }
 
 main {
     padding: 1em 3em;
-    background-color: darkorchid;
+    background-color: whitesmoke;
     margin: 0%;
 }
 
@@ -35,4 +57,58 @@ h1 {
     font-family: 'Molle', cursive;
     font-size: 2em;
     vertical-align: middle;
+    color: var(--purple2);
+}
+
+nav {
+    margin: 0%;
+    padding: 0%;
+}
+
+nav ul {
+    list-style-type: none;
+    /* position: relative; */
+    padding: 0%;
+}
+
+nav ul li {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    /* float: left; */
+    /* margin: 0%; */
+    background-color: var(--pink1);
+    padding: 1em 0em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: yellow2;
+    /*why isn't this working?*/
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        width: 3em;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        display: block;
+        margin: 0em;
+    }
+    nav {
+        position: fixed;
+        top: 3em;
+        left: 0em;
+        /* display: none; */
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin: 0em;
+    }
 }
