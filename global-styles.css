@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Yeseva+One|PT+Sans|Molle:400i|BioRhyme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One|PT+Sans|Pacifico|PT+Serif|Molle:400i|BioRhyme&display=swap');
 
 /* @import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/BurgerSqueeze/styles.scss');
 @import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/Burger/styles.scss'); */
@@ -11,7 +11,7 @@
     --purple1: #9800ff;
     --purple2: #6600aa;
     --purple3: #ddaaff;
-    --blue1: #55eeff;
+    --blue1: #55eeffb3;
     --blue2: #666ccc;
     --blue3: #0027ff;
     --mint1: #aaffdd;
@@ -38,7 +38,7 @@ body {
 }
 
 main {
-    padding: 1em 3em;
+    padding: 1em 2em;
     background-color: rgba(245, 245, 245, 0.68);
     margin: 0%;
 }
@@ -55,10 +55,9 @@ header * {
 
 /* further down the list are backup font families */
 
-h2,
-h3,
-h4 {
+h2 {
     font-family: 'Yeseva One', Cambria, 'Bookman Old Style', serif;
+    font-size: 2em;
 }
 
 h1 {
@@ -67,11 +66,28 @@ h1 {
     margin: 0px;
 }
 
+h3 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+h4 {
+    /* font-weight: 100; */
+    /* font-family: 'PT Serif', Cambria, 'Bookman Old Style', serif; */
+    font-size: 1.25em;
+    /* font-style: italic; */
+}
+
 .extra {
     font-family: 'Molle', cursive;
     font-size: 2em;
     vertical-align: middle;
     color: var(--purple2);
+}
+
+img {
+    max-width: 100%;
 }
 
 @media (min-width: 701px) {
