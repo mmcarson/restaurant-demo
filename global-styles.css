@@ -133,7 +133,7 @@ nav ul li {
     nav ul {
         flex-direction: column;
         margin: 0em;
-        transition: height 2s;
-        max-height: auto;
+        transition: height .75s;
+        height: 0px;
     }
 }
