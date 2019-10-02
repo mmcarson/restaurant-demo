@@ -110,14 +110,15 @@ nav ul li {
         position: fixed;
         top: 0%;
         left: 0%;
-        display: block;
+        display: inline-block;
         margin: 0em;
         background-color: var(--purple1);
         /* padding: .5em; */
     }
     nav {
         position: fixed;
-        top: 3rem;
+        background-color: var(--purple2);
+        top: 0em;
         left: 0em;
         /* margin: 0em; */
         /* display: none; */
@@ -127,6 +128,7 @@ nav ul li {
     nav ul li {
         display: block;
         margin: 0em;
+        padding: 1em;
     }
     nav ul {
         flex-direction: column;
