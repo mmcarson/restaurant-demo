@@ -3,7 +3,7 @@
 /* @import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/BurgerSqueeze/styles.scss');
 @import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/Burger/styles.scss'); */
 
-@import url('burger-styles.scss');
+@import url('burger-styles.css');
 :root {
     --pink1: #ff55ed;
     --pink2: #ff00ba;
@@ -97,7 +97,6 @@ nav ul li {
 #main-nav a {
     text-decoration: none;
     color: var(--yellow2);
-    /*why isn't this working?*/
 }
 
 .hamburger {
@@ -106,17 +105,21 @@ nav ul li {
 
 @media (max-width: 600px) {
     .hamburger {
-        width: 3em;
+        /* width: 4em; */
+        /* height: 4em; */
         position: fixed;
         top: 0%;
         left: 0%;
         display: block;
         margin: 0em;
+        background-color: var(--purple1);
+        /* padding: .5em; */
     }
     nav {
         position: fixed;
-        top: 3em;
+        top: 3rem;
         left: 0em;
+        /* margin: 0em; */
         /* display: none; */
         z-index: 2;
         transition: display 1s;
