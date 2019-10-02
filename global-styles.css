@@ -123,7 +123,7 @@ nav ul li {
         /* margin: 0em; */
         /* display: none; */
         z-index: 2;
-        transition: display 1s;
+        overflow: hidden;
     }
     nav ul li {
         display: block;
@@ -132,5 +132,8 @@ nav ul li {
     }
     nav ul {
         flex-direction: column;
+        margin: 0em;
+        transition: height 2s;
+        max-height: auto;
     }
 }
