@@ -5,7 +5,7 @@
 
 @import url('burger-styles.css');
 :root {
-    --pink1: #ff55ed;
+    --pink1: #ff55eebf;
     --pink2: #ff00ba;
     --pink3: #ffcce8;
     --purple1: #9800ff;
@@ -30,17 +30,26 @@ body {
     font-family: 'PT Sans', Calibri, Verdana, sans-serif;
     background-color: var(--yellow1);
     padding: 0%;
+    background-image: url('images/strawberries.png');
+    /* background-size: 90vh; */
+    background-position: left top;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 main {
     padding: 1em 3em;
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0.68);
     margin: 0%;
 }
 
 header {
     text-align: center;
     padding-bottom: 2em;
+}
+
+header * {
+    text-shadow: var(--yellow1) 1px 1px 1px, var(--yellow1) -1px 1px 1px, var(--yellow1) 1px -1px 1px, var(--yellow1) -1px -1px 1px, var(--yellow1) 0px 0px 2px;
 }
 
 
@@ -112,6 +121,9 @@ nav ul li {
 }
 
 @media (max-width: 700px) {
+    body {
+        background-position: 10vw 10vh;
+    }
     .hamburger {
         /* width: 4em; */
         /* height: 4em; */
@@ -143,5 +155,11 @@ nav ul li {
         margin: 0em;
         transition: height .75s;
         height: 0px;
+    }
+}
+
+@media (max-width: 400px) {
+    .extra {
+        font-size: 1em;
     }
 }
