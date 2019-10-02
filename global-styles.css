@@ -65,11 +65,17 @@ h1 {
     color: var(--purple2);
 }
 
-@media (min-width: 601px) {
+@media (min-width: 701px) {
     #main-nav {
         margin: 0%;
         padding: 0%;
-        display: block !important;
+        height: auto !important;
+    }
+    .last {
+        margin-right: .5em;
+    }
+    .first {
+        margin-left: .5em;
     }
 }
 
@@ -78,7 +84,7 @@ nav ul {
     /* position: relative; */
     padding: 0%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     background-color: var(--pink1);
 }
 
@@ -91,19 +97,21 @@ nav ul li {
     background-color: var(--purple2);
     padding: 1em 0em;
     flex-grow: 1;
-    margin: .5em;
+    margin: .5em .25em;
 }
 
 #main-nav a {
     text-decoration: none;
     color: var(--yellow2);
+    width: 100%;
+    height: 100%;
 }
 
 .hamburger {
     display: none;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .hamburger {
         /* width: 4em; */
         /* height: 4em; */
