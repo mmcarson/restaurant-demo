@@ -1,14 +1,23 @@
-<!-- <img class="hamburger" onclick="toggleMenu()" src="images/hamburger.png"> -->
-<nav>
-    <div id="burger" class="hamburger burger burger-squeeze" onclick="toggleMenu()">
-        <div class="burger-lines"></div>
-    </div>
-    <ul id="main-nav">
-        <li class="first"><a href=#>Food</a></li>
-        <li><a href="index.html">About</a></li>
-        <li><a href=#>History</a></li>
-        <li><a href=#>Locations</a></li>
-        <li><a href=#>Press</a></li>
-        <li class="last"><a href=#>Reservations</a></li>
-    </ul>
-</nav>
+<div id="burger" class="hamburger burger burger-squeeze" onclick="toggleMenu()">
+    <div class="burger-lines"></div>
+</div>
+<ul id="main-nav">
+    <li id="food-button" class="first">
+        <a href="javascript:navigateTo('food');">Food</a>
+    </li>
+    <li id="about-button">
+        <a href="javascript:navigateTo('about');">About</a>
+    </li>
+    <li id="history-button">
+        <a href="javascript:navigateTo('history');">History</a>
+    </li>
+    <li id="locations-button">
+        <a href="javascript:navigateTo('locations');">Locations</a>
+    </li>
+    <li id="press-button">
+        <a href="javascript:navigateTo('press');">Press</a>
+    </li>
+    <li id="reservations-button">
+        <a href="javascript:navigateTo('reservations');">Reservations</a>
+    </li>
+</ul>

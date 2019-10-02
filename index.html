@@ -4,24 +4,12 @@
 <head>
     <title>The Fruit Bowl - Home</title>
     <link rel="stylesheet" type="text/css" href="global-styles.css">
-    <style>
-
-    </style>
 </head>
 
 <body>
-    <!-- <header>
-        <h1>The <span class="extra">Fruit</span> &nbsp;Bowl</h1>
-        <i>Making life anything but still since 2014.</i>
-    </header> -->
-    <div w3-include-html="header.html"></div>
-    <div w3-include-html="nav-menu.html"></div>
-    <main>
-        <h2>Our Mission</h2>
-        <p>Here, we aim to think outside box (but inside the bowl.) Sweet and savory are brought together in every dish with appetizers, salads, and entrees that feature different seasonal fruit. We update our menu often, so come by to try what could be
-            your new favorite meal!</p>
-        <p id="href"></p>
-    </main>
+    <header w3-include-html="header.html"></header>
+    <nav w3-include-html="nav-menu.html"></nav>
+    <main w3-include-html="pages/about.html"></main>
     <script type="text/javascript" src="include.js"></script>
     <!--script that loads from a file must be an empty tag-->
     <script>
@@ -30,6 +18,7 @@
     </script>
     <!--scripts should be at the end of the body-->
     <script type="text/javascript" src="togglemenu.js"></script>
+    <script type="text/javascript" src="navigate.js"></script>
 </body>
 
 </html>

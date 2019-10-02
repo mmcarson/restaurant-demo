@@ -97,6 +97,10 @@ nav ul {
     background-color: var(--pink1);
 }
 
+.current {
+    background-color: var(--pink2);
+}
+
 nav ul li {
     width: 100px;
     text-align: center;
@@ -107,6 +111,11 @@ nav ul li {
     padding: 1em 0em;
     flex-grow: 1;
     margin: .5em .25em;
+    /* color: var(--yellow2); */
+}
+
+nav ul li:hover {
+    background-color: var(--purple1);
 }
 
 #main-nav a {
