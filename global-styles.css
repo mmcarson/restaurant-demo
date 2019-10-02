@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Yeseva+One|PT+Sans|Molle:400i|BioRhyme&display=swap');
+
+/* @import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/BurgerSqueeze/styles.scss');
+@import url('https://raw.githubusercontent.com/march08/animated-burgers/master/packages/Burger/styles.scss'); */
+
+@import url('burger-styles.scss');
 :root {
     --pink1: #ff55ed;
     --pink2: #ff00ba;
@@ -60,9 +65,12 @@ h1 {
     color: var(--purple2);
 }
 
-nav {
-    margin: 0%;
-    padding: 0%;
+@media (min-width: 601px) {
+    #main-nav {
+        margin: 0%;
+        padding: 0%;
+        display: block !important;
+    }
 }
 
 nav ul {
@@ -71,7 +79,7 @@ nav ul {
     padding: 0%;
     display: flex;
     justify-content: space-between;
-    background-color: var(--blue1);
+    background-color: var(--pink1);
 }
 
 nav ul li {
@@ -80,7 +88,7 @@ nav ul li {
     display: inline-block;
     /* float: left; */
     /* margin: 0%; */
-    background-color: var(--pink1);
+    background-color: var(--purple2);
     padding: 1em 0em;
     flex-grow: 1;
     margin: .5em;
@@ -111,6 +119,7 @@ nav ul li {
         left: 0em;
         /* display: none; */
         z-index: 2;
+        transition: display 1s;
     }
     nav ul li {
         display: block;
