@@ -141,6 +141,10 @@ nav ul li:hover {
     height: 100%;
 }
 
+#cart-content {
+    display: none;
+}
+
 .hamburger {
     display: none;
 }
