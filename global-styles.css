@@ -86,6 +86,20 @@ h4 {
     color: var(--purple2);
 }
 
+table {
+    background-color: var(--purple3);
+}
+
+table * {
+    padding: .5em;
+    text-align: left;
+}
+
+th {
+    background-color: var(--mint2);
+    font-weight: bold;
+}
+
 img {
     max-width: 100%;
 }
