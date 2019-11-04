@@ -1,16 +1,25 @@
 {
     "menu": [{
-        "name": "Soups & Salads",
-        "items": [{
-            "name": "Watermelon Gazpacho",
-            "description": "Served cold with cucumber and dill creme fraiche",
-            "image": "/images/watermelon-gazpacho.jpg",
-            "price": 3
-        }, {
-            "name": "Grilled Peach & Smoked Salmon Salad",
-            "description": "Arugula, candied sliced almonds, radicchio",
-            "image": "https://cdn1.woolworths.media/content/recipes/1712-chargrilled-peach-and-salmon-salad.jpg",
-            "price": 4
-        }]
-    }]
+            "name": "Soups & Salads",
+            "items": [{
+                "name": "Watermelon Gazpacho",
+                "description": "Served cold with cucumber and dill creme fraiche",
+                "image": "/images/watermelon-gazpacho.jpg",
+                "price": 3
+            }, {
+                "name": "Grilled Peach & Smoked Salmon Salad",
+                "description": "Arugula, candied sliced almonds, radicchio",
+                "image": "https://cdn1.woolworths.media/content/recipes/1712-chargrilled-peach-and-salmon-salad.jpg",
+                "price": 4
+            }]
+        },
+        {
+            "name": "Appetizers",
+            "items": [{
+                "name": "Bacon-Wrapped Figs",
+                "description": "Hot grilled with maple-chipotle dipping sauce and stuffed with goat cheese",
+                "price": 6
+            }]
+        }
+    ]
 }
