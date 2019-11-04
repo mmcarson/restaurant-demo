@@ -51,7 +51,7 @@ const updateCart = function() {
 // }
 
 // this is always called when the page loads
-window.onload = updateCart;
+// window.onload = updateCart;
 // just calling the function will create an error because the element does not exist
 // updateCart();
 
