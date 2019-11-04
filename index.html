@@ -26,11 +26,18 @@
     <!-- <script type="text/javascript" src="menu-items.json"></script> -->
     <script>
         includeHTML();
-        console.log("script called");
-        window.onload = function() {
-            updateCart();
-            populateFood();
-        }
+        window.onload = async function() {
+                console.log("script called");
+                await updateCart();
+                await populateFood();
+            }
+            // window.onload = function() {
+            //     window.document.body.onload = function() {
+            //         console.log("inside body onload");
+            //         updateCart();
+            //         populateFood();
+            //     }
+            // }
     </script>
 </body>
 

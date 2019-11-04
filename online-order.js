@@ -23,7 +23,7 @@ const rowFromItem = function(value) {
 }
 
 // anonymous function as a variable
-const updateCart = function() {
+const updateCart = async function() {
     cartTable = document.getElementById("cart-content"); // step 1: get parent element
     console.log("called updateCart");
     // identify the table
