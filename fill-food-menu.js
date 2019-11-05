@@ -12,6 +12,7 @@ const populateFood = async function() {
             categoryHeading.innerText = category.name; // step 3: create content
             categorySection.appendChild(categoryHeading); // step 4: append child
             foodMenuElement.appendChild(categorySection); // step 4: append child 
+            let categorySize = 0;
             category.items.forEach(item => {
                 itemName = document.createElement("h4"); // step 2: create element
                 itemName.innerText = item.name; // step 3: create content
@@ -22,6 +23,16 @@ const populateFood = async function() {
                 itemPrice = document.createElement("b");
                 itemPrice.innerText = '$' + item.price;
                 categorySection.appendChild(itemPrice);
+                if (item.image) {
+                    imageID = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15); // generating random ID
+                    itemImage = document.createElement("img");
+                    itemImage.setAttribute("id", imageID);
+                    itemImage.setAttribute("src", item.image); //setAttribute
+                    categorySection.appendChild(itemImage);
+                    categorySize += $('#' + imageID).height() / 200;
+                }
+                categorySize++;
+                categorySection.setAttribute("style", "grid-row: span " + categorySize);
             });
         });
     });

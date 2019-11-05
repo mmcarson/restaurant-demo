@@ -18,7 +18,20 @@
             "items": [{
                 "name": "Bacon-Wrapped Figs",
                 "description": "Hot grilled with maple-chipotle dipping sauce and stuffed with goat cheese",
+                "image": "https://www.thehungryhutch.com/wp-content/uploads/2012/08/Bacon-Wrapped-Figs-w-Goat-Cheese-Feature.jpg",
                 "price": 6
+            }]
+        },
+        {
+            "name": "Beverages",
+            "items": [{
+                "name": "Coke Products",
+                "description": "Coke, Diet Coke, Cherry Coke, Sprite",
+                "price": 2
+            }, {
+                "name": "Specialty Sodas",
+                "description": "Jones, Saranac, Millstream",
+                "price": 3
             }]
         }
     ]
