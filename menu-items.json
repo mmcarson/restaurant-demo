@@ -23,6 +23,26 @@
             }]
         },
         {
+            "name": "Pastas",
+            "items": [{
+                "name": "Pumpkin Mascarpone Ravioli",
+                "description": "Served with a sage brown butter sauce and toasted pumpkin seeds",
+                "price": 11
+            }]
+        },
+        {
+            "name": "Entrees",
+            "items": [{
+                "name": "Smoked Pork Ribs with Blueberry BBQ Sauce",
+                "description": "Side of beer-battered rosemary sweet potato wedges",
+                "price": 16
+            }, {
+                "name": "Pomegranate Lamb Chops",
+                "description": "Marinated overnight in a curried yogurt and slow-smoked, served with a cauliflower sunchoke mash",
+                "price": 20
+            }]
+        },
+        {
             "name": "Beverages",
             "items": [{
                 "name": "Coke Products",
@@ -31,7 +51,8 @@
             }, {
                 "name": "Specialty Sodas",
                 "description": "Jones, Saranac, Millstream",
-                "price": 3
+                "price": 3,
+                "image": "https://insiderfinancial.com/wp-content/uploads/2019/03/Jones-Soda.jpg"
             }]
         }
     ]

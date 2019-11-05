@@ -19,11 +19,11 @@ let exampleArray = [{ item: "soup", price: 3 },
 ]
 
 const rowFromItem = function(value) {
-    cartTable.appendChild(makeCartRow(value.item, '$' + value.price));
+    cartTable.appendChild(makeCartRow(value.name, '$' + value.price));
 }
 
 // anonymous function as a variable
-const updateCart = async function() {
+const updateCart = async function(array) {
     cartTable = document.getElementById("cart-content"); // step 1: get parent element
     console.log("called updateCart");
     // identify the table
@@ -43,7 +43,10 @@ const updateCart = async function() {
     // cartTable.appendChild(makeCartRow("soup", "$3"));
     // cartTable.appendChild(makeCartRow("salad", "$3"));
     // cartTable.appendChild(makeCartRow("sandwich", "$5"));
-    exampleArray.forEach(rowFromItem);
+    if (!array) {
+        array = [];
+    }
+    array.forEach(rowFromItem);
 }
 
 // updateCart = function() {

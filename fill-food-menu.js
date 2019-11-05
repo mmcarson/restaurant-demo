@@ -1,3 +1,9 @@
+// function randomString() {
+//     return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15);
+// }
+
+let orderArray = [];
+
 const populateFood = async function() {
     // console.dir(menuFile);
     $.getJSON("menu-items.json", function(menuData) {
@@ -7,6 +13,7 @@ const populateFood = async function() {
         console.dir(foodMenuElement);
         // go through each category
         menuData.menu.forEach(category => {
+            // section and heading
             categorySection = document.createElement("section"); // step 2: create new element
             categoryHeading = document.createElement("h3"); // step 2: create new element
             categoryHeading.innerText = category.name; // step 3: create content
@@ -14,6 +21,7 @@ const populateFood = async function() {
             foodMenuElement.appendChild(categorySection); // step 4: append child 
             let categorySize = 0;
             category.items.forEach(item => {
+                // items
                 itemName = document.createElement("h4"); // step 2: create element
                 itemName.innerText = item.name; // step 3: create content
                 categorySection.appendChild(itemName); // step 4: append child
@@ -24,17 +32,30 @@ const populateFood = async function() {
                 itemPrice.innerText = '$' + item.price;
                 categorySection.appendChild(itemPrice);
                 if (item.image) {
-                    imageID = Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15); // generating random ID
                     itemImage = document.createElement("img");
-                    itemImage.setAttribute("id", imageID);
                     itemImage.setAttribute("src", item.image); //setAttribute
+                    itemImage.style.background
                     categorySection.appendChild(itemImage);
-                    categorySize += $('#' + imageID).height() / 200;
+                    categorySize++;
                 }
                 categorySize++;
+                console.log(categorySize + category.name);
                 categorySection.setAttribute("style", "grid-row: span " + categorySize);
+                // button for online ordering
+                button = document.createElement("button");
+                button.innerText = "Add to Online Order";
+                button.onclick = function() {
+                    orderArray.push(item);
+                    updateCart(orderArray);
+                }
+                categorySection.appendChild(button);
             });
         });
+    });
+    $.each($("#food-menu img"), function(element) {
+        console.log(element);
+        let totalHeightPadding = (element.width() - element.height()) / 2;
+        element.style.padding = totalHeightPadding + "px" + " 0px ";
     });
 }
 

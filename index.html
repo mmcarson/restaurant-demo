@@ -25,8 +25,13 @@
 
     <!-- <script type="text/javascript" src="menu-items.json"></script> -->
     <script>
-        includeHTML();
+        // function getStarted () {
+        //     return new Promise(function(resolve){
+
+        //     });
+        // }
         window.onload = async function() {
+                await includeHTML();
                 console.log("script called");
                 await updateCart();
                 await populateFood();
