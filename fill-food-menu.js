@@ -31,16 +31,6 @@ const populateFood = async function() {
                 itemPrice = document.createElement("b");
                 itemPrice.innerText = '$' + item.price;
                 categorySection.appendChild(itemPrice);
-                if (item.image) {
-                    itemImage = document.createElement("img");
-                    itemImage.setAttribute("src", item.image); //setAttribute
-                    itemImage.style.background
-                    categorySection.appendChild(itemImage);
-                    categorySize++;
-                }
-                categorySize++;
-                console.log(categorySize + category.name);
-                categorySection.setAttribute("style", "grid-row: span " + categorySize);
                 // button for online ordering
                 button = document.createElement("button");
                 button.innerText = "Add to Online Order";
@@ -49,14 +39,18 @@ const populateFood = async function() {
                     updateCart(orderArray);
                 }
                 categorySection.appendChild(button);
+                // optional image
+                if (item.image) {
+                    itemImage = document.createElement("img");
+                    itemImage.setAttribute("src", item.image); //setAttribute
+                    // itemImage.style.background
+                    categorySection.appendChild(itemImage);
+                    categorySize++;
+                }
+                categorySize++;
+                console.log(categorySize + category.name);
+                categorySection.setAttribute("style", "grid-row: span " + categorySize);
             });
         });
     });
-    $.each($("#food-menu img"), function(element) {
-        console.log(element);
-        let totalHeightPadding = (element.width() - element.height()) / 2;
-        element.style.padding = totalHeightPadding + "px" + " 0px ";
-    });
 }
-
-// window.onload = populateFood("menu-items.json");

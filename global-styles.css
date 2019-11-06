@@ -79,6 +79,30 @@ h4 {
     /* font-style: italic; */
 }
 
+#food-menu>* {
+    display: flex;
+    flex-direction: column;
+}
+
+#food-menu>*>* {
+    display: block;
+    align-self: center;
+    flex-grow: 1;
+    /* margin: 0.5rem 0em; */
+    /* height: 1.5em; */
+}
+
+#food-menu button {
+    flex-grow: 0;
+}
+
+button {
+    /* height: 2em; */
+    background-color: var(--blue2);
+    color: whitesmoke;
+    border-width: 0px;
+}
+
 .extra {
     font-family: 'Molle', cursive;
     font-size: 2em;

@@ -47,6 +47,18 @@ const updateCart = async function(array) {
         array = [];
     }
     array.forEach(rowFromItem);
+    const totalRow = document.createElement("tr"); // step 2 new element
+    const totalHeader = document.createElement("th");
+    const totalAmount = document.createElement("th");
+    let sum = 0;
+    array.forEach(function(item) {
+        sum += item.price;
+    })
+    totalAmount.innerText = '$' + sum;
+    totalHeader.innerText = "Total: ";
+    totalRow.appendChild(totalHeader);
+    totalRow.appendChild(totalAmount);
+    cartTable.appendChild(totalRow);
 }
 
 // updateCart = function() {
