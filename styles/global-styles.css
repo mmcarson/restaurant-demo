@@ -30,7 +30,7 @@ body {
     font-family: 'PT Sans', Calibri, Verdana, sans-serif;
     background-color: var(--yellow1);
     padding: 0%;
-    background-image: url('images/strawberries.png');
+    background-image: url('../images/strawberries.png');
     /* background-size: 90vh; */
     background-position: left top;
     background-attachment: fixed;

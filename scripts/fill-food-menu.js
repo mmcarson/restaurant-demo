@@ -6,7 +6,7 @@ let orderArray = [];
 
 const populateFood = async function() {
     // console.dir(menuFile);
-    $.getJSON("menu-items.json", function(menuData) {
+    $.getJSON("data/menu-items.json", function(menuData) {
         // console.dir(menuData.menu[0].items[0]);
         console.dir(menuData);
         const foodMenuElement = document.getElementById("food-menu"); // step 1: get parent element from document

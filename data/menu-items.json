@@ -4,7 +4,7 @@
             "items": [{
                 "name": "Watermelon Gazpacho",
                 "description": "Served cold with cucumber and dill creme fraiche",
-                "image": "/images/watermelon-gazpacho.jpg",
+                "image": "images/watermelon-gazpacho.jpg",
                 "price": 3
             }, {
                 "name": "Grilled Peach & Smoked Salmon Salad",
