@@ -1,9 +1,15 @@
 <h2>Reservations</h2>
-<form action="make-reservation.js" method="POST">
-    <select>
+<!-- <form action="make-reservation.js" method="POST"> this is the pre-HTML5 way -->
+<form onsubmit="/scripts/make-reservation.js">
+    <label for="select">Sample Dropdown</label>
+    <select id="select">
         <option>1</option>
         <option>2</option>
+        <option>3</option>
     </select>
-    <input type="datetime-local">
+    <br>
+    <label for="calendar">Sample Calendar Selection</label>
+    <input id="calendar" type="datetime-local">
+    <br>
     <input type="submit">
 </form>
