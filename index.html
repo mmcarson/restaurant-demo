@@ -7,6 +7,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!--jquery script-->
     <!--put linked scripts in head and scripts with calls at the bottom of the body-->
+    <!--script that loads from a file must be an empty tag-->
     <script type="text/javascript" src="scripts/togglemenu.js"></script>
     <script type="text/javascript" src="scripts/navigate.js"></script>
     <script type="text/javascript" src="scripts/togglecart.js"></script>
@@ -19,30 +20,15 @@
     <header w3-include-html="pages/header.html"></header>
     <section id="cart-area" w3-include-html="pages/cart.html"></section>
     <nav w3-include-html="pages/nav-menu.html"></nav>
-    <main w3-include-html="pages/food.html"></main>
-    <!--script that loads from a file must be an empty tag-->
-    <!--scripts should be at the end of the body-->
-
-    <!-- <script type="text/javascript" src="menu-items.json"></script> -->
+    <main w3-include-html="pages/reservations.html"></main>
+    <!--scripts that directly make commands should be at the end of the body-->
     <script>
-        // function getStarted () {
-        //     return new Promise(function(resolve){
-
-        //     });
-        // }
         window.onload = async function() {
-                await includeHTML();
-                console.log("script called");
-                await updateCart();
-                await populateFood();
-            }
-            // window.onload = function() {
-            //     window.document.body.onload = function() {
-            //         console.log("inside body onload");
-            //         updateCart();
-            //         populateFood();
-            //     }
-            // }
+            await includeHTML();
+            console.log("script called");
+            await updateCart();
+            await populateFood();
+        }
     </script>
 </body>
 
