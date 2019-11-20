@@ -1,6 +1,7 @@
 <h2>Reservations</h2>
-<!-- <form action="make-reservation.js" method="POST"> this is the pre-HTML5 way -->
-<form onsubmit="/scripts/make-reservation.js">
+<form action="http://0.0.0.0:3333/post/echoform/date" method="post">
+    <!--this is the pre-HTML5 way-->
+    <!-- <form onsubmit="/scripts/make-reservation.js"> -->
     <label for="select">Sample Dropdown</label>
     <select id="select">
         <option>1</option>
@@ -9,7 +10,7 @@
     </select>
     <br>
     <label for="calendar">Sample Calendar Selection</label>
-    <input id="calendar" type="datetime-local">
+    <input id="calendar" type="datetime-local" name="date">
     <br>
     <input type="submit">
 </form>
