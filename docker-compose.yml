@@ -5,8 +5,22 @@ services:
     image: httpd
     ports: 
       - "8084:80"
-    expose:
-      - "8084"
     volumes:
-      - ".:/usr/local/apache2/htdocs/"
-      
+      - "./public/:/usr/local/apache2/htdocs/"
+  
+  reservation-postgres:
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment: 
+      POSTGRES_PASSWORD: kirkwood12
+    # volumes:
+    #   - ./posgresql/:/usr/share/postgresql/
+
+  reservation-golang:
+    image: alpine
+    ports:
+      - "3333:3333"
+    command: [/home/reservation-server]
+    volumes:
+      - ./reservation-server:/home/reservation-server
