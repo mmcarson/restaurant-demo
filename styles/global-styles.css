@@ -193,6 +193,42 @@ nav ul li:hover {
     display: none;
 }
 
+form {
+    background-color: var(--blue1);
+    padding: 1rem;
+    display: block;
+}
+
+
+/* fieldset input[type=submit] {
+    margin-bottom: 1em;
+} */
+
+
+/* .form-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+form label {
+    width: 10rem;
+    flex-grow: 0;
+    text-align: right;
+    margin: .3rem;
+}
+
+form input,
+form textarea {
+    flex-grow: 1;
+    margin: .3rem;
+} */
+
+.form-row * {
+    margin-top: 0px !important;
+    /* margin: .25em .25em !important; */
+}
+
 @media (max-width: 700px) {
     body {
         background-position: 10vw 10vh;
