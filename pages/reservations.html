@@ -1,6 +1,5 @@
 <h2>Make Reservation at The Fruit Bowl</h2>
-<form action="http://0.0.0.0:3333/post/echoform/date" method="post" class="pure-form pure-form-aligned">
-    <!--this is the pre-HTML5 way-->
+<form id="reservation-form" action="http://localhost:8080/post/echoform/date" method="post" target="_self">
     <!-- <label for="select">Sample Dropdown</label>
     <select id="select">
         <option>1</option>
@@ -8,28 +7,34 @@
         <option>3</option>
     </select> -->
     <fieldset>
-        <div class="form-row pure-control-group">
-            <label>Name (first or last is required)</label>
-            <input type="text" placeholder="First">
-            <input type="text" placeholder="Middle">
-            <input type="text" placeholder="Last">
+        <input type="hidden" name="restaurant-name" value="The Fruit Bowl">
+        <label for="name">Name (first or last is required)</label>
+        <div id="name" class="form-group">
+            <input id="firstname" name="firstname" type="text" placeholder="First">
+            <input id="middlename" name="middlename" type="text" placeholder="Middle">
+            <input id="lastname" name="lastname" type="text" placeholder="Last">
         </div>
-        <div class="form-row pure-control-group">
-            <label for="number-people">Number of People</label>
-            <input type="number" value="2" min="1" max="6">
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="example@gmail.com" required>
+        <label for="number-people">Number of People</label>
+        <input name="number-people" id="number-people" type="number" value="2" min="1" max="6" required>
+        <label for="table-type">Acceptable table types: </label>
+        <div id=table-type class="form-group">
+            <label for="table">Table</label>
+            <input type="checkbox" name="table" id="table" checked>
+            <label for="booth">Booth</label>
+            <input type="checkbox" name="booth" id="booth" checked>
+            <label for="halfbooth">Half-booth</label>
+            <input type="checkbox" name="halfbooth" id="halfbooth" checked>
+            <label for="hightop">High-top</label>
+            <input type="checkbox" name="hightop" id="hightop" checked>
         </div>
-        <div class="form-row pure-control-group">
-            <label for="calendar">Date</label>
-            <input id="calendar" type="date" name="date">
-        </div>
-        <div style="margin-top: .25rem;" class="form-row pure-controls">
-            <input class="pure-button button-primary" id="check-times" type="submit" value="Check Times">
-            <div id="times"></div>
-        </div>
-        <div class="form-row pure-control-group">
-            <label for="misc">Preferences, Special Occasions, Dietary Restrictions, etc.</label>
-            <textarea type="text" id="misc"></textarea>
-        </div>
-        <input style="margin-top: .25rem;" class="form-row pure-controls pure-button button-primary" type="submit" value="Submit">
+        <label for="calendar">Date</label>
+        <input id="calendar" type="date" name="date" required>
+        <input class="pure-button button-primary" id="check-times" type="button" value="Check Times" onclick="checkTimes()">
+        <div id="times"></div>
+        <label for="misc">Preferences, Special Occasions, Dietary Restrictions, etc.</label>
+        <textarea type="text" id="misc"></textarea>
+        <input style="margin-top: .25rem;" class="pure-button button-primary" type="submit" value="Submit">
     </fieldset>
 </form>
